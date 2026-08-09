@@ -1,83 +1,67 @@
 # -------- IMPORTS --------
-import os
-import warnings
 import logging
-import streamlit as st
+import warnings
 
-from langchain_groq import ChatGroq
-from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.document_loaders import PyPDFLoader
-from langchain.chains import RetrievalQA
-from langchain_community.vectorstores import FAISS
+import streamlit as st
+from langchain_core.messages import AIMessage, HumanMessage
+
+from src import config
+from src.llm import get_llm
+from src.rag_engine import (
+    build_conversational_rag_chain,
+    build_vectorstore,
+    is_low_quality_answer,
+)
+from src.utils import persist_uploaded_files
 
 # -------- SETTINGS --------
 warnings.filterwarnings("ignore")
 logging.getLogger("transformers").setLevel(logging.ERROR)
+logging.basicConfig(level=logging.INFO)
 
 st.set_page_config(page_title="RAG Chatbot", layout="wide")
 
 # -------- UI --------
-st.title(" Smart RAG Chatbot")
-st.caption("Chat with your PDF or ask anything")
+st.title("Smart RAG Chatbot")
+st.caption("Chat with your PDFs or ask anything")
 
 # -------- SIDEBAR --------
 st.sidebar.header("Controls")
 
-if st.sidebar.button(" Clear Chat"):
+if st.sidebar.button("Clear Chat"):
     st.session_state.messages = []
     st.rerun()
 
-uploaded_file = st.sidebar.file_uploader(" Upload PDF", type="pdf")
+uploaded_files = st.sidebar.file_uploader(
+    "Upload PDF(s)", type="pdf", accept_multiple_files=True
+)
 
-# -------- CHAT MEMORY --------
+# -------- CHAT MEMORY (display) --------
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
 for msg in st.session_state.messages:
-    st.chat_message(msg["role"]).markdown(msg["content"])
+    with st.chat_message(msg["role"]):
+        st.markdown(msg["content"])
+        if msg.get("sources"):
+            with st.expander("Sources"):
+                for s in msg["sources"]:
+                    st.markdown(f"**{s['source']} — page {s['page']}**")
+                    st.write(s["snippet"])
 
-
-# -------- VECTOR STORE (SAFE VERSION) --------
-@st.cache_resource(show_spinner=False)
-def create_vectorstore(file_path):
-    loader = PyPDFLoader(file_path)
-    documents = loader.load()
-
-    splitter = RecursiveCharacterTextSplitter(
-        chunk_size=400,
-        chunk_overlap=50
-    )
-
-    texts = splitter.split_documents(documents)
-
-    embeddings = HuggingFaceEmbeddings(
-        model_name="sentence-transformers/all-MiniLM-L6-v2"
-    )
-
-    safe_texts = []
-
-    for t in texts:
-        try:
-            if t.page_content and isinstance(t.page_content, str):
-                text = t.page_content.strip()
-
-                # Clean problematic characters
-                text = text.replace("\n", " ").replace("\x00", "")
-
-                if len(text) > 30:
-                    t.page_content = text
-
-                    # Test embedding (prevents crash)
-                    embeddings.embed_query(text[:500])
-
-                    safe_texts.append(t)
-
-        except:
-            continue
-
-    return FAISS.from_documents(safe_texts, embeddings)
-
+# -------- VECTOR STORE --------
+vectorstore = None
+if uploaded_files:
+    try:
+        file_paths, file_hashes = persist_uploaded_files(uploaded_files)
+        vectorstore = build_vectorstore(tuple(file_hashes), tuple(file_paths))
+        if vectorstore is None:
+            st.sidebar.warning(
+                "No usable text could be extracted from the uploaded PDF(s)."
+            )
+    except Exception as exc:  # noqa: BLE001 - surfaced to the user
+        logging.exception("Failed to index uploaded PDFs")
+        st.sidebar.error(f"Failed to process uploaded PDF(s): {exc}")
 
 # -------- INPUT --------
 prompt = st.chat_input("Ask something...")
@@ -86,63 +70,82 @@ if prompt:
     st.chat_message("user").markdown(prompt)
     st.session_state.messages.append({"role": "user", "content": prompt})
 
-    groq_chat = ChatGroq(
-        groq_api_key=os.environ.get("GROQ_API_KEY"),
-        model_name="llama-3.1-8b-instant"
-    )
+    # Convert prior turns into LangChain message objects so the chain can
+    # actually use them (previously, history was only ever re-rendered in the
+    # UI — it was never given back to the retriever or the LLM).
+    chat_history = []
+    for m in st.session_state.messages[:-1]:
+        if m["role"] == "user":
+            chat_history.append(HumanMessage(content=m["content"]))
+        else:
+            chat_history.append(AIMessage(content=m["content"]))
+
+    response_text = ""
+    sources_for_display = []
 
     try:
+        llm = get_llm()
+
         with st.spinner("Thinking..."):
-
-            # -------- IF PDF EXISTS --------
-            if uploaded_file:
-                with open("temp.pdf", "wb") as f:
-                    f.write(uploaded_file.read())
-
-                vectorstore = create_vectorstore("temp.pdf")
-
-                chain = RetrievalQA.from_chain_type(
-                    llm=groq_chat,
-                    chain_type="stuff",
-                    retriever=vectorstore.as_retriever(search_kwargs={"k": 3}),
-                    return_source_documents=True
+            # -------- IF PDF(S) EXIST --------
+            if vectorstore is not None:
+                rag_chain = build_conversational_rag_chain(vectorstore, llm)
+                result = rag_chain.invoke(
+                    {"input": prompt, "chat_history": chat_history}
                 )
 
-                result = chain({"query": prompt})
-                answer = result["result"]
-
-                # Ensure safe string
+                answer = result.get("answer", "")
                 if not isinstance(answer, str):
                     answer = str(answer)
-
                 answer = answer.replace("Ɵ", "ti").replace("ﬁ", "fi")
 
-                sources = result.get("source_documents", [])
+                retrieved_docs = result.get("context", [])
 
                 # -------- SMART FILTER --------
-                bad_phrases = ["don't know", "not mentioned", "not provided"]
-
-                use_pdf_answer = (
-                    sources
-                    and not any(p in answer.lower() for p in bad_phrases)
+                use_pdf_answer = bool(retrieved_docs) and not is_low_quality_answer(
+                    answer
                 )
 
                 if use_pdf_answer:
-                    response = answer
+                    response_text = answer
 
-                    with st.expander("Source from PDF"):
-                        for doc in sources[:2]:
-                            st.write(doc.page_content[:300] + "...")
+                    seen = set()
+                    for doc in retrieved_docs[:3]:
+                        key = (doc.metadata.get("source"), doc.metadata.get("page"))
+                        if key in seen:
+                            continue
+                        seen.add(key)
+                        sources_for_display.append(
+                            {
+                                "source": doc.metadata.get("source", "unknown"),
+                                "page": doc.metadata.get("page", "?"),
+                                "snippet": doc.page_content[:300] + "...",
+                            }
+                        )
                 else:
-                    response = groq_chat.invoke(prompt).content
+                    response_text = llm.invoke(prompt).content
 
             else:
                 # -------- NORMAL CHAT --------
-                response = groq_chat.invoke(prompt).content
+                response_text = llm.invoke(prompt).content
 
-    except Exception as e:
-        response = f"Error: {str(e)}"
+    except Exception as exc:  # noqa: BLE001 - shown to user, and logged
+        logging.exception("Chat turn failed")
+        response_text = f"Error: {exc}"
 
     # -------- DISPLAY --------
-    st.chat_message("assistant").markdown(response)
-    st.session_state.messages.append({"role": "assistant", "content": response})
+    with st.chat_message("assistant"):
+        st.markdown(response_text)
+        if sources_for_display:
+            with st.expander("Sources"):
+                for s in sources_for_display:
+                    st.markdown(f"**{s['source']} — page {s['page']}**")
+                    st.write(s["snippet"])
+
+    st.session_state.messages.append(
+        {
+            "role": "assistant",
+            "content": response_text,
+            "sources": sources_for_display,
+        }
+    )
