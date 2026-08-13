@@ -1,4 +1,4 @@
-# Smart RAG Chatbot
+# evidence-gated-rag-chatbot-with-llm-as-a-judge-evaluation
 
 A grounded RAG chatbot: hybrid (vector + BM25) retrieval, cross-encoder
 reranking, a hard relevance gate before generation, and real conversational
