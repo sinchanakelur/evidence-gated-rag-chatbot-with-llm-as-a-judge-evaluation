@@ -32,9 +32,18 @@ def _clean_text(text: str) -> str:
 def load_and_split_pdfs(file_paths: List[str]) -> List[Document]:
     """Load one or more PDFs, clean the text and split into retrieval-sized chunks.
 
-    Every chunk carries 'source' (original filename) and 'page' (1-indexed)
-    metadata, which is what lets the UI show real page-wise citations instead
-    of just a raw text snippet.
+    Every chunk carries:
+      - 'source' (original filename)
+      - 'page'   (1-indexed)
+      - 'chunk_id' (stable, deterministic id: "<filename>::p<page>::<index>")
+
+    `chunk_id` is new: it's what lets citations be grounded to the exact
+    chunk that was retrieved/reranked/used for generation (instead of just a
+    raw text snippet), and it's the join key the evaluation harness in
+    eval/ uses to compare retrieved chunks against a hand-labeled golden
+    set. It is deterministic given a fixed chunking config (CHUNK_SIZE /
+    CHUNK_OVERLAP) and file content -- if you change chunking, re-generate
+    any golden set built against the old ids (see eval/inspect_chunks.py).
 
     A PDF that fails to load (corrupt file, scanned image-only PDF, etc.) is
     skipped with a warning rather than crashing the whole app, and the rest of
@@ -44,7 +53,6 @@ def load_and_split_pdfs(file_paths: List[str]) -> List[Document]:
         chunk_size=config.CHUNK_SIZE,
         chunk_overlap=config.CHUNK_OVERLAP,
     )
-
     all_chunks: List[Document] = []
 
     for path in file_paths:
@@ -71,6 +79,7 @@ def load_and_split_pdfs(file_paths: List[str]) -> List[Document]:
             logger.warning("Failed to split %s: %s", path, exc)
             continue
 
+        file_chunk_index = 0
         for chunk in chunks:
             text = chunk.page_content
             if not text or not isinstance(text, str):
@@ -79,6 +88,10 @@ def load_and_split_pdfs(file_paths: List[str]) -> List[Document]:
             if len(cleaned) < config.MIN_CHUNK_LENGTH:
                 continue
             chunk.page_content = cleaned
+            chunk.metadata["chunk_id"] = (
+                f"{filename}::p{chunk.metadata.get('page', '?')}::{file_chunk_index}"
+            )
+            file_chunk_index += 1
             all_chunks.append(chunk)
 
     return all_chunks

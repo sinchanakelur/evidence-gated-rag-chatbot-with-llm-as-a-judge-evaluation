@@ -1,0 +1,41 @@
+{
+  "questions": [
+    "What is the job summary?",
+    "What are the key responsibilities?",
+    "What qualifications are required?",
+    "What soft skills are mentioned?",
+    "What will I gain from this role?"
+  ],
+  "answers": [
+    "We are looking for enthusiastic and sharp-minded fresh graduates to join our data team as Analyst/Associates/Software Engineer.",
+    "According to the provided Context, the key responsibilities include:\n\nData Analytics \u2022 Analyze large volumes of structured and unstructured data to extract meaningful business insights.",
+    "To be qualified for the position, you need a Bachelor's degree in one of the following fields: \n\n1. Engineering\n2. Computer Science\n3. Data Science\n4. Gen AI\n5. Related fields\n\nAdditionally, final-year students or recent graduates are also welcome to apply.",
+    "The following soft skills are mentioned:\n\n1. Curiosity and a passion for data-driven problem solving\n2. Strong analytical and logical thinking\n3. Good communication and collaboration skills\n4. Willingness to learn in a fast-paced environment\n5. Ability to break down complex problems and document clearly",
+    "You'll gain hands-on experience across analytics, data science, and engineering tracks to solve critical business problems. \n\n(Drawn from: \"What You\u2019ll Gain\")"
+  ],
+  "contexts": [
+    [
+      "JD for Analyst (DCF Level 25 at DGS) Job Summary We are looking for enthusiastic and sharp -minded fresh graduates to join our data team as Analyst/ Associates / Software Engineer . This is an entry -level role designed to offer exposure across the data value chain \u2014 from data wrangling and engineering to analytics and predictive modeling. You\u2019ll work closely with product, engineering, and business teams to help solve real -world problems using data. Ideal for individuals who are passionate about uncovering insights, building scalable data pipelines, and developing machine learning models to drive decision- making. Key Responsibilities Data Analytics \u2022 Analyze large volumes of structured and unstructured data to extract meaningful business insights."
+    ],
+    [
+      "JD for Analyst (DCF Level 25 at DGS) Job Summary We are looking for enthusiastic and sharp -minded fresh graduates to join our data team as Analyst/ Associates / Software Engineer . This is an entry -level role designed to offer exposure across the data value chain \u2014 from data wrangling and engineering to analytics and predictive modeling. You\u2019ll work closely with product, engineering, and business teams to help solve real -world problems using data. Ideal for individuals who are passionate about uncovering insights, building scalable data pipelines, and developing machine learning models to drive decision- making. Key Responsibilities Data Analytics \u2022 Analyze large volumes of structured and unstructured data to extract meaningful business insights."
+    ],
+    [
+      "\u2022 Help maintain data integrity, quality, and documentation across data systems. Qualifications \u2022 Education: Bachelor\u2019s degree in Engineering, Computer Science, Data Science, Gen AI or related fields. Final-year students or recent graduates are welcome to apply. \u2022 Technical Skills: o Strong foundation in Java, React, NodeJS, Python, SQL, and Excel o Basic understanding of data structures, databases, and algorithms o Exposure to pandas, NumPy, PySpark, scikit-learn, GenAI, Agentic AI or TensorFlow is a plus o Familiarity with BI tools (e.g., Power BI, T ableau) or cloud platforms (e.g., AWS, GCP) is desirable o Knowledge of version control (Git) is an advantage Soft Skills \u2022 Curiosity and a passion for data-driven problem solving"
+    ],
+    [
+      "Soft Skills \u2022 Curiosity and a passion for data-driven problem solving \u2022 Strong analytical and logical thinking \u2022 Good communication and collaboration skills \u2022 Willingness to learn in a fast-paced environment \u2022 Ability to break down complex problems and document clearly Preferred (Good to Have, Not Mandatory) \u2022 Internship or academic project in data analytics, machine learning, or database systems \u2022 Participation in hackathons, coding contests, or Kaggle competitions \u2022 Exposure to Agile or collaborative tools like JIRA, Confluence",
+      "\u2022 Help maintain data integrity, quality, and documentation across data systems. Qualifications \u2022 Education: Bachelor\u2019s degree in Engineering, Computer Science, Data Science, Gen AI or related fields. Final-year students or recent graduates are welcome to apply. \u2022 Technical Skills: o Strong foundation in Java, React, NodeJS, Python, SQL, and Excel o Basic understanding of data structures, databases, and algorithms o Exposure to pandas, NumPy, PySpark, scikit-learn, GenAI, Agentic AI or TensorFlow is a plus o Familiarity with BI tools (e.g., Power BI, T ableau) or cloud platforms (e.g., AWS, GCP) is desirable o Knowledge of version control (Git) is an advantage Soft Skills \u2022 Curiosity and a passion for data-driven problem solving"
+    ],
+    [
+      "What You\u2019ll Gain \u2022 Hands-on experience across analytics, data science, and engineering tracks to solve critical Business problems. \u2022 Opportunity to work on live projects and scalable systems \u2022 Mentorship from experienced data professionals \u2022 Career pathways in analytics, data science, GenAI, Agentic AI or data engineering based on your interest and skills"
+    ]
+  ],
+  "ground_truths": [
+    "Looking for enthusiastic, sharp-minded fresh graduates to join the data team as Analyst/Associate/Software Engineer \u2014 an entry-level role spanning data wrangling, engineering, analytics, and predictive modeling.",
+    "Data Analytics: analyze large volumes of structured and unstructured data to extract meaningful business insights.",
+    "Bachelor's degree in Engineering, Computer Science, Data Science, Gen AI, or a related field; final-year students and recent graduates are welcome to apply.",
+    "Curiosity and a passion for data-driven problem solving; strong analytical and logical thinking; good communication and collaboration skills; willingness to learn in a fast-paced environment; ability to break down complex problems and document clearly.",
+    "Hands-on experience across analytics, data science, and engineering tracks to solve real business problems."
+  ]
+}

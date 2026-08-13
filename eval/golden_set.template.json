@@ -1,0 +1,16 @@
+[
+  {
+    "id": "q1",
+    "question": "What was the reported Q3 revenue?",
+    "is_answerable": true,
+    "relevant_chunks": ["financials.pdf::p4::2", "financials.pdf::p4::3"],
+    "reference_answer": "Q3 revenue was $12.4M, up 8% quarter-over-quarter."
+  },
+  {
+    "id": "q2",
+    "question": "What color is used for the company logo?",
+    "is_answerable": false,
+    "relevant_chunks": [],
+    "reference_answer": ""
+  }
+]

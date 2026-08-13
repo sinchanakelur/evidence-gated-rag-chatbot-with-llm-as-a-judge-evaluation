@@ -1,0 +1,1004 @@
+{
+  "summary": {
+    "n_questions": 18,
+    "retrieval_raw": {
+      "recall_at_k": {
+        "mean": 1.0,
+        "median": 1.0,
+        "p95": 1.0,
+        "n": 14
+      },
+      "precision_at_k": {
+        "mean": 0.2857142857142857,
+        "median": 0.2,
+        "p95": 0.4,
+        "n": 14
+      },
+      "mrr": {
+        "mean": 0.8095238095238095,
+        "median": 1.0,
+        "p95": 1.0,
+        "n": 14
+      },
+      "hit_rate": {
+        "mean": 1.0,
+        "median": 1.0,
+        "p95": 1.0,
+        "n": 14
+      }
+    },
+    "retrieval_served": {
+      "recall_at_k": {
+        "mean": 0.8809523809523809,
+        "median": 1.0,
+        "p95": 1.0,
+        "n": 14
+      },
+      "precision_at_k": {
+        "mean": 0.8690476190476191,
+        "median": 1.0,
+        "p95": 1.0,
+        "n": 14
+      },
+      "mrr": {
+        "mean": 0.9285714285714286,
+        "median": 1.0,
+        "p95": 1.0,
+        "n": 14
+      },
+      "hit_rate": {
+        "mean": 1.0,
+        "median": 1.0,
+        "p95": 1.0,
+        "n": 14
+      }
+    },
+    "refusal_quality": {
+      "refusal_recall": 0.75,
+      "false_refusal_rate": 0.0,
+      "n_unanswerable": 4,
+      "n_answerable": 14
+    },
+    "effective_refusal_quality": {
+      "refusal_recall": 1.0,
+      "false_refusal_rate": 0.0,
+      "n_unanswerable": 4,
+      "n_answerable": 14
+    },
+    "latency_ms": {
+      "condense": {
+        "mean": 0.0023277777169520655,
+        "median": 0.002300001142430119,
+        "p95": 0.0029000002541579306,
+        "n": 18
+      },
+      "retrieval": {
+        "mean": 31.964866666789426,
+        "median": 29.769800000394753,
+        "p95": 51.94880000090052,
+        "n": 18
+      },
+      "rerank": {
+        "mean": 227.32299999996837,
+        "median": 216.9024000004356,
+        "p95": 291.58970000025874,
+        "n": 18
+      },
+      "generation": {
+        "mean": 508.0182833334119,
+        "median": 559.8304499999358,
+        "p95": 736.2262000006012,
+        "n": 18
+      },
+      "total": {
+        "mean": 767.3084777778867,
+        "median": 787.7858000010747,
+        "p95": 1038.3154999999533,
+        "n": 18
+      }
+    },
+    "ragas": null,
+    "generation_quality": {
+      "faithfulness": {
+        "mean": 0.9333333333333333,
+        "median": 1.0,
+        "p95": 1.0,
+        "n": 15
+      },
+      "answer_relevance": {
+        "mean": 0.93,
+        "median": 1.0,
+        "p95": 1.0,
+        "n": 15
+      }
+    }
+  },
+  "per_question": [
+    {
+      "id": "q1",
+      "question": "What is the job summary?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "answer": "**Job Summary**  \nWe are looking for enthusiastic and sharp\u2011minded fresh graduates to join our data team as Analyst/Associates/Software Engineer. This entry\u2011level role is designed to offer exposure across the data value chain\u2014from data wrangling and engineering to analytics and predictive modeling. You\u2019ll work closely with product, engineering, and business teams to help solve real\u2011world problems using data. Ideal candidates are passionate about uncovering insights, building scalable data pipelines, and developing machine learning models to drive decision\u2011making. (Source: JD for Analyst \u2013 DCF Level 25 at DGS)",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.002999999196617864,
+        "retrieval_ms": 30.81899999961024,
+        "rerank_ms": 291.58970000025874,
+        "generation_ms": 1003.8294000005408,
+        "total_ms": 1326.2410999996064
+      },
+      "raw_retrieval_ms": 27.696500001184177,
+      "rerank_ms_standalone": 502.2533999999723,
+      "recall_raw": 1.0,
+      "precision_raw": 0.2,
+      "mrr_raw": 1.0,
+      "hit_raw": 1.0,
+      "recall_served": 1.0,
+      "precision_served": 1.0,
+      "mrr_served": 1.0,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 1.0,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q2",
+      "question": "What are the key responsibilities?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "answer": "**Key Responsibilities**\n\n- Analyze large volumes of structured and unstructured data to extract meaningful business insights. (Source: JD for Analyst \u2013 \u201cKey Responsibilities\u201d section)",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.0029000002541579306,
+        "retrieval_ms": 35.715300000447314,
+        "rerank_ms": 220.65049999946496,
+        "generation_ms": 459.20250000017404,
+        "total_ms": 715.5712000003405
+      },
+      "raw_retrieval_ms": 24.761799999396317,
+      "rerank_ms_standalone": 196.1049000001367,
+      "recall_raw": 1.0,
+      "precision_raw": 0.6,
+      "mrr_raw": 1.0,
+      "hit_raw": 1.0,
+      "recall_served": 0.3333333333333333,
+      "precision_served": 1.0,
+      "mrr_served": 1.0,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 0.5,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q3",
+      "question": "What qualifications are required?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+      ],
+      "answer": "**Qualifications required**\n\n- **Education**: Bachelor\u2019s degree in Engineering, Computer Science, Data Science, Gen AI or related fields. Final\u2011year students or recent graduates are welcome to apply.  \n- **Technical Skills**:  \n  - Strong foundation in Java, React, NodeJS, Python, SQL, and Excel.  \n  - Basic understanding of data structures, databases, and algorithms.  \n  - Exposure to pandas, NumPy, PySpark, scikit\u2011learn, GenAI, Agentic AI or TensorFlow is a plus.  \n  - Familiarity with BI tools (e.g., Power BI, Tableau) or cloud platforms (e.g., AWS, GCP) is desirable.  \n  - Knowledge of version control (Git) is an advantage.  \n- **Soft Skills**: Curiosity and a passion for data\u2011driven problem solving.",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.0016000012692529708,
+        "retrieval_ms": 22.420699999202043,
+        "rerank_ms": 171.4672000016435,
+        "generation_ms": 706.7940999986604,
+        "total_ms": 900.6836000007752
+      },
+      "raw_retrieval_ms": 16.214399998716544,
+      "rerank_ms_standalone": 119.48389999997744,
+      "recall_raw": 1.0,
+      "precision_raw": 0.2,
+      "mrr_raw": 0.5,
+      "hit_raw": 1.0,
+      "recall_served": 1.0,
+      "precision_served": 1.0,
+      "mrr_served": 1.0,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 1.0,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q4",
+      "question": "What soft skills are mentioned?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+      ],
+      "answer": "The soft skills mentioned in the context are:\n\n1. Curiosity and a passion for data\u2011driven problem solving  \n2. Strong analytical and logical thinking  \n3. Good communication and collaboration skills  \n4. Willingness to learn in a fast\u2011paced environment  \n5. Ability to break down complex problems and document clearly  \n\nThese are listed under the \u201cSoft Skills\u201d section of the document.",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.001999998858082108,
+        "retrieval_ms": 18.563999999969383,
+        "rerank_ms": 209.13649999965855,
+        "generation_ms": 479.4205999987753,
+        "total_ms": 707.1230999972613
+      },
+      "raw_retrieval_ms": 21.27199999995355,
+      "rerank_ms_standalone": 147.58740000070247,
+      "recall_raw": 1.0,
+      "precision_raw": 0.4,
+      "mrr_raw": 1.0,
+      "hit_raw": 1.0,
+      "recall_served": 1.0,
+      "precision_served": 1.0,
+      "mrr_served": 1.0,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 1.0,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q5",
+      "question": "What will I gain from this role?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "answer": "You\u2019ll gain hands\u2011on experience across analytics, data science, and engineering tracks to solve critical business problems; the opportunity to work on live projects and scalable systems; mentorship from experienced data professionals; and career pathways in analytics, data science, GenAI, Agentic AI, or data engineering based on your interests and skills. (From the \u201cWhat You\u2019ll Gain\u201d section.)",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.0017999991541728377,
+        "retrieval_ms": 28.142299999672105,
+        "rerank_ms": 184.8597999996855,
+        "generation_ms": 506.6394000004948,
+        "total_ms": 719.6432999990066
+      },
+      "raw_retrieval_ms": 19.451599999229074,
+      "rerank_ms_standalone": 150.53479999914998,
+      "recall_raw": 1.0,
+      "precision_raw": 0.2,
+      "mrr_raw": 0.3333333333333333,
+      "hit_raw": 1.0,
+      "recall_served": 1.0,
+      "precision_served": 1.0,
+      "mrr_served": 1.0,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 1.0,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q6",
+      "question": "What color is used for the company logo?",
+      "is_answerable": false,
+      "relevant_chunks": [],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "served_ids": [],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "answer": "I couldn't find this in the uploaded document(s). Try rephrasing the question, or upload a document that covers this topic.",
+      "refused": true,
+      "timings": {
+        "condense_ms": 0.002300001142430119,
+        "retrieval_ms": 30.1008999995247,
+        "rerank_ms": 187.22619999971357,
+        "generation_ms": 0.0,
+        "total_ms": 217.3294000003807
+      },
+      "raw_retrieval_ms": 31.500099999902886,
+      "rerank_ms_standalone": 168.29770000003919,
+      "recall_raw": null,
+      "precision_raw": null,
+      "mrr_raw": null,
+      "hit_raw": null,
+      "recall_served": null,
+      "precision_served": null,
+      "mrr_served": null,
+      "hit_served": null,
+      "faithfulness_score": null,
+      "faithfulness_unsupported_claims": null,
+      "answer_relevance_score": null,
+      "soft_refusal": null,
+      "effective_refused": true
+    },
+    {
+      "id": "q7",
+      "question": "What is the main purpose of the Analyst/Associate/Software Engineer role?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+      ],
+      "answer": "The Analyst/Associate/Software Engineer role is designed to bring fresh graduates into the data team so they can gain exposure across the entire data value chain\u2014data wrangling, engineering, analytics, and predictive modeling\u2014and help solve real\u2011world problems by extracting insights and building scalable data pipelines and machine learning models. (JD for Analyst \u2013 DCF Level\u202f25 at DGS)",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.0021999985619913787,
+        "retrieval_ms": 53.73650000001362,
+        "rerank_ms": 337.05279999958293,
+        "generation_ms": 603.9271999998164,
+        "total_ms": 994.7186999979749
+      },
+      "raw_retrieval_ms": 46.91770000135875,
+      "rerank_ms_standalone": 277.17829999892274,
+      "recall_raw": 1.0,
+      "precision_raw": 0.2,
+      "mrr_raw": 1.0,
+      "hit_raw": 1.0,
+      "recall_served": 1.0,
+      "precision_served": 1.0,
+      "mrr_served": 1.0,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 1.0,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q8",
+      "question": "What are the key responsibilities under Data Science?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+      ],
+      "answer": "**Key Responsibilities under Data Science**\n\n- Assist in building, testing, and deploying machine learning models under supervision.  \n- Work with statistical and ML techniques for classification, regression, clustering, etc.  \n- Collaborate on experiments, hypothesis testing, and performance evaluation of models.  \n\n(These points are taken directly from the \u201cData Science\u201d section of the JD.)",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.002499999027349986,
+        "retrieval_ms": 36.26810000059777,
+        "rerank_ms": 233.60610000054294,
+        "generation_ms": 610.688000000664,
+        "total_ms": 880.5647000008321
+      },
+      "raw_retrieval_ms": 27.65720000024885,
+      "rerank_ms_standalone": 193.36000000112108,
+      "recall_raw": 1.0,
+      "precision_raw": 0.2,
+      "mrr_raw": 0.5,
+      "hit_raw": 1.0,
+      "recall_served": 1.0,
+      "precision_served": 0.3333333333333333,
+      "mrr_served": 0.5,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 1.0,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q9",
+      "question": "What technical skills are listed?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+      ],
+      "answer": "**Technical skills listed in the context**\n\n1. Strong foundation in:\n   - Java  \n   - React  \n   - NodeJS  \n   - Python  \n   - SQL  \n   - Excel  \n\n2. Basic understanding of:\n   - Data structures  \n   - Databases  \n   - Algorithms  \n\n3. Exposure to (optional/plus):\n   - pandas  \n   - NumPy  \n   - PySpark  \n   - scikit\u2011learn  \n   - GenAI  \n   - Agentic AI  \n   - TensorFlow  \n\n4. Familiarity with:\n   - BI tools (e.g., Power\u202fBI, Tableau)  \n   - Cloud platforms (e.g., AWS, GCP)  \n\n5. Knowledge of version control:\n   - Git  \n\nThese are the technical skills mentioned in the provided document.",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.0025000008463393897,
+        "retrieval_ms": 37.43699999904493,
+        "rerank_ms": 264.6497999994608,
+        "generation_ms": 736.2262000006012,
+        "total_ms": 1038.3154999999533
+      },
+      "raw_retrieval_ms": 25.47949999825505,
+      "rerank_ms_standalone": 218.87799999967683,
+      "recall_raw": 1.0,
+      "precision_raw": 0.2,
+      "mrr_raw": 0.5,
+      "hit_raw": 1.0,
+      "recall_served": 1.0,
+      "precision_served": 0.5,
+      "mrr_served": 1.0,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 1.0,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q10",
+      "question": "What educational qualifications and technical skills are required?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+      ],
+      "answer": "**Educational qualifications**  \n- Bachelor\u2019s degree in Engineering, Computer Science, Data Science, Gen AI, or a related field.  \n- Final\u2011year students or recent graduates are also welcome to apply.  \n\n**Technical skills**  \n- Strong foundation in **Java, React, NodeJS, Python, SQL, and Excel**.  \n- Basic understanding of data structures, databases, and algorithms.  \n- Exposure to **pandas, NumPy, PySpark, scikit\u2011learn, GenAI, Agentic AI, or TensorFlow** is a plus.  \n- Familiarity with BI tools such as **Power\u202fBI** or **Tableau**, or cloud platforms like **AWS** or **GCP**, is desirable.  \n- Knowledge of version control (**Git**) is an advantage.",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.002300001142430119,
+        "retrieval_ms": 28.51840000039374,
+        "rerank_ms": 263.01709999825107,
+        "generation_ms": 607.9231999992771,
+        "total_ms": 899.4609999990644
+      },
+      "raw_retrieval_ms": 28.345700000500074,
+      "rerank_ms_standalone": 201.76509999873815,
+      "recall_raw": 1.0,
+      "precision_raw": 0.2,
+      "mrr_raw": 0.5,
+      "hit_raw": 1.0,
+      "recall_served": 1.0,
+      "precision_served": 1.0,
+      "mrr_served": 1.0,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 1.0,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q11",
+      "question": "What are the key responsibilities under Data Engineering?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+      ],
+      "answer": "**Key responsibilities under Data Engineering** (as listed in the JD):\n\n- Support in designing and building data pipelines and ETL processes.  \n- Assist in data cleaning, transformation, and storage using SQL, Python, or cloud platforms.",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.0025000008463393897,
+        "retrieval_ms": 28.352799999993294,
+        "rerank_ms": 224.574500000017,
+        "generation_ms": 675.5822000013723,
+        "total_ms": 928.5120000022289
+      },
+      "raw_retrieval_ms": 29.301300000952324,
+      "rerank_ms_standalone": 191.76650000008522,
+      "recall_raw": 1.0,
+      "precision_raw": 0.4,
+      "mrr_raw": 1.0,
+      "hit_raw": 1.0,
+      "recall_served": 0.5,
+      "precision_served": 0.3333333333333333,
+      "mrr_served": 0.5,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 0.9,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q12",
+      "question": "What are the key responsibilities under Data Analytics?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "answer": "**Key responsibilities under Data Analytics**\n\n- Analyze large volumes of structured and unstructured data to extract meaningful business insights. (Source: JD for Analyst \u2013 \u201cKey Responsibilities Data Analytics\u201d section)",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.0024000000848900527,
+        "retrieval_ms": 31.9273000004614,
+        "rerank_ms": 213.15430000140623,
+        "generation_ms": 551.6824000005727,
+        "total_ms": 796.7664000025252
+      },
+      "raw_retrieval_ms": 20.151099999566213,
+      "rerank_ms_standalone": 174.9918000004982,
+      "recall_raw": 1.0,
+      "precision_raw": 0.4,
+      "mrr_raw": 1.0,
+      "hit_raw": 1.0,
+      "recall_served": 0.5,
+      "precision_served": 1.0,
+      "mrr_served": 1.0,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 0.55,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q13",
+      "question": "Which BI tools are mentioned?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+      ],
+      "answer": "The BI tools mentioned are **Power\u202fBI** and **Tableau**.",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.001999998858082108,
+        "retrieval_ms": 39.98440000032133,
+        "rerank_ms": 240.57799999900453,
+        "generation_ms": 478.89949999989767,
+        "total_ms": 759.4638999980816
+      },
+      "raw_retrieval_ms": 21.850700000868528,
+      "rerank_ms_standalone": 166.88190000058967,
+      "recall_raw": 1.0,
+      "precision_raw": 0.4,
+      "mrr_raw": 1.0,
+      "hit_raw": 1.0,
+      "recall_served": 1.0,
+      "precision_served": 1.0,
+      "mrr_served": 1.0,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 1.0,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q14",
+      "question": "Which cloud platforms are mentioned?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+      ],
+      "answer": "The cloud platforms mentioned are **AWS** and **GCP** (Amazon Web Services and Google Cloud Platform).",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.0020000006770715117,
+        "retrieval_ms": 18.5473000001366,
+        "rerank_ms": 192.27739999951154,
+        "generation_ms": 567.978499999299,
+        "total_ms": 778.8051999996242
+      },
+      "raw_retrieval_ms": 14.247899998736102,
+      "rerank_ms_standalone": 140.15180000023975,
+      "recall_raw": 1.0,
+      "precision_raw": 0.2,
+      "mrr_raw": 1.0,
+      "hit_raw": 1.0,
+      "recall_served": 1.0,
+      "precision_served": 1.0,
+      "mrr_served": 1.0,
+      "hit_served": 1.0,
+      "faithfulness_score": 0.5,
+      "faithfulness_unsupported_claims": [
+        "AWS stands for Amazon Web Services",
+        "GCP stands for Google Cloud Platform"
+      ],
+      "answer_relevance_score": 1.0,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q15",
+      "question": "Is Git required or only an advantage?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+      ],
+      "answer": "Git is listed as an **advantage** only. It is not stated as a required qualification. (Source: \u201cKnowledge of version control (Git) is an advantage.\u201d)",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.0029000002541579306,
+        "retrieval_ms": 51.94880000090052,
+        "rerank_ms": 286.8716000011773,
+        "generation_ms": 670.7814000001235,
+        "total_ms": 1009.6047000024555
+      },
+      "raw_retrieval_ms": 23.082699999577017,
+      "rerank_ms_standalone": 186.76030000096944,
+      "recall_raw": 1.0,
+      "precision_raw": 0.2,
+      "mrr_raw": 1.0,
+      "hit_raw": 1.0,
+      "recall_served": 1.0,
+      "precision_served": 1.0,
+      "mrr_served": 1.0,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 1.0,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q16",
+      "question": "What is the salary range for this role?",
+      "is_answerable": false,
+      "relevant_chunks": [],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+      ],
+      "served_ids": [],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "answer": "I couldn't find this in the uploaded document(s). Try rephrasing the question, or upload a document that covers this topic.",
+      "refused": true,
+      "timings": {
+        "condense_ms": 0.001999998858082108,
+        "retrieval_ms": 27.629100000922335,
+        "rerank_ms": 180.00109999957203,
+        "generation_ms": 0.0,
+        "total_ms": 207.63219999935245
+      },
+      "raw_retrieval_ms": 14.754499999980908,
+      "rerank_ms_standalone": 135.2747000000818,
+      "recall_raw": null,
+      "precision_raw": null,
+      "mrr_raw": null,
+      "hit_raw": null,
+      "recall_served": null,
+      "precision_served": null,
+      "mrr_served": null,
+      "hit_served": null,
+      "faithfulness_score": null,
+      "faithfulness_unsupported_claims": null,
+      "answer_relevance_score": null,
+      "soft_refusal": null,
+      "effective_refused": true
+    },
+    {
+      "id": "q17",
+      "question": "Is this role remote, hybrid, or in-office?",
+      "is_answerable": false,
+      "relevant_chunks": [],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+      ],
+      "served_ids": [],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "answer": "I couldn't find this in the uploaded document(s). Try rephrasing the question, or upload a document that covers this topic.",
+      "refused": true,
+      "timings": {
+        "condense_ms": 0.0027999994927085936,
+        "retrieval_ms": 29.438700001264806,
+        "rerank_ms": 193.8867000008031,
+        "generation_ms": 0.0,
+        "total_ms": 223.32820000156062
+      },
+      "raw_retrieval_ms": 51.59509999975853,
+      "rerank_ms_standalone": 214.21960000043327,
+      "recall_raw": null,
+      "precision_raw": null,
+      "mrr_raw": null,
+      "hit_raw": null,
+      "recall_served": null,
+      "precision_served": null,
+      "mrr_served": null,
+      "hit_served": null,
+      "faithfulness_score": null,
+      "faithfulness_unsupported_claims": null,
+      "answer_relevance_score": null,
+      "soft_refusal": null,
+      "effective_refused": true
+    },
+    {
+      "id": "q18",
+      "question": "Who does this role report to?",
+      "is_answerable": false,
+      "relevant_chunks": [],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "answer": "The provided job description does not specify who the Analyst (DCF Level\u202f25 at DGS) reports to. It only outlines responsibilities and qualifications.",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.002200000380980782,
+        "retrieval_ms": 25.816999999733525,
+        "rerank_ms": 197.21469999967667,
+        "generation_ms": 484.75450000114506,
+        "total_ms": 707.7884000009362
+      },
+      "raw_retrieval_ms": 20.62850000038452,
+      "rerank_ms_standalone": 214.73259999947913,
+      "recall_raw": null,
+      "precision_raw": null,
+      "mrr_raw": null,
+      "hit_raw": null,
+      "recall_served": null,
+      "precision_served": null,
+      "mrr_served": null,
+      "hit_served": null,
+      "faithfulness_score": 0.5,
+      "faithfulness_unsupported_claims": [
+        "It only outlines responsibilities and qualifications."
+      ],
+      "answer_relevance_score": 1.0,
+      "soft_refusal": true,
+      "effective_refused": true
+    }
+  ]
+}

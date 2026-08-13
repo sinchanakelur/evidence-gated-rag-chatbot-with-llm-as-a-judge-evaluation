@@ -1,14 +1,13 @@
 streamlit
-
 langchain==0.2.16
 langchain-community==0.2.16
 langchain-core==0.2.38
 langchain-groq==0.1.9
 langchain-text-splitters==0.2.4
-
 faiss-cpu
 sentence-transformers
 pypdf
 huggingface_hub
-
 torch
+torchvision
+rank_bm25

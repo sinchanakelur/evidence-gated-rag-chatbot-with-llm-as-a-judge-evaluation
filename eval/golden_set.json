@@ -1,0 +1,162 @@
+[
+  {
+    "id": "q1",
+    "question": "What is the job summary?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+    ],
+    "reference_answer": "Looking for enthusiastic, sharp-minded fresh graduates to join the data team as Analyst/Associate/Software Engineer -- an entry-level role spanning data wrangling, engineering, analytics, and predictive modeling."
+  },
+  {
+    "id": "q2",
+    "question": "What are the key responsibilities?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+    ],
+    "reference_answer": "Covers Data Analytics, Data Science, and Data Engineering: analyzing data for business insights, building dashboards, building/testing ML models, building data pipelines and ETL processes, and maintaining data quality/documentation."
+  },
+  {
+    "id": "q3",
+    "question": "What qualifications are required?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+    ],
+    "reference_answer": "Bachelor's degree in Engineering, Computer Science, Data Science, Gen AI, or a related field; final-year students and recent graduates are welcome to apply."
+  },
+  {
+    "id": "q4",
+    "question": "What soft skills are mentioned?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+    ],
+    "reference_answer": "Curiosity and a passion for data-driven problem solving; strong analytical and logical thinking; good communication and collaboration skills; willingness to learn in a fast-paced environment; ability to break down complex problems and document clearly."
+  },
+  {
+    "id": "q5",
+    "question": "What will I gain from this role?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+    ],
+    "reference_answer": "Hands-on experience across analytics, data science, and engineering tracks to solve real business problems."
+  },
+  {
+    "id": "q6",
+    "question": "What color is used for the company logo?",
+    "is_answerable": false,
+    "relevant_chunks": [],
+    "reference_answer": ""
+  },
+  {
+    "id": "q7",
+    "question": "What is the main purpose of the Analyst/Associate/Software Engineer role?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+    ],
+    "reference_answer": "To bring fresh graduates into the data team to gain exposure across the data value chain -- wrangling, engineering, analytics, and predictive modeling -- and help solve real-world problems with data."
+  },
+  {
+    "id": "q8",
+    "question": "What are the key responsibilities under Data Science?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+    ],
+    "reference_answer": "Assist in building, testing, and deploying machine learning models under supervision; work with statistical and ML techniques (classification, regression, clustering); collaborate on experiments, hypothesis testing, and performance evaluation."
+  },
+  {
+    "id": "q9",
+    "question": "What technical skills are listed?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+    ],
+    "reference_answer": "Java, React, NodeJS, Python, SQL, Excel; basic data structures/databases/algorithms; exposure to pandas, NumPy, PySpark, scikit-learn, GenAI, Agentic AI, or TensorFlow; BI tools or cloud platforms; Git."
+  },
+  {
+    "id": "q10",
+    "question": "What educational qualifications and technical skills are required?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+    ],
+    "reference_answer": "Bachelor's degree in Engineering, Computer Science, Data Science, Gen AI, or related field; plus the technical skill set listed under qualifications (Java, React, NodeJS, Python, SQL, Excel, etc.)."
+  },
+  {
+    "id": "q11",
+    "question": "What are the key responsibilities under Data Engineering?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+    ],
+    "reference_answer": "Support in designing and building data pipelines and ETL processes; assist in data cleaning, transformation, and storage using SQL, Python, or cloud platforms; help maintain data integrity, quality, and documentation across data systems."
+  },
+  {
+    "id": "q12",
+    "question": "What are the key responsibilities under Data Analytics?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+    ],
+    "reference_answer": "Analyze large volumes of structured and unstructured data to extract meaningful business insights; create dashboards, visualizations, and reports using tools like Power BI, Tableau, or Excel; support in identifying patterns, trends, and anomalies to support business decisions."
+  },
+  {
+    "id": "q13",
+    "question": "Which BI tools are mentioned?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+    ],
+    "reference_answer": "Power BI and Tableau."
+  },
+  {
+    "id": "q14",
+    "question": "Which cloud platforms are mentioned?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+    ],
+    "reference_answer": "AWS and GCP."
+  },
+  {
+    "id": "q15",
+    "question": "Is Git required or only an advantage?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+    ],
+    "reference_answer": "Git is listed as an advantage, not a required skill."
+  },
+  {
+    "id": "q16",
+    "question": "What is the salary range for this role?",
+    "is_answerable": false,
+    "relevant_chunks": [],
+    "reference_answer": ""
+  },
+  {
+    "id": "q17",
+    "question": "Is this role remote, hybrid, or in-office?",
+    "is_answerable": false,
+    "relevant_chunks": [],
+    "reference_answer": ""
+  },
+  {
+    "id": "q18",
+    "question": "Who does this role report to?",
+    "is_answerable": false,
+    "relevant_chunks": [],
+    "reference_answer": ""
+  }
+]

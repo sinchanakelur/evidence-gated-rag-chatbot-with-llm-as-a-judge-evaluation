@@ -1,0 +1,19 @@
+# For the SEPARATE "venv-eval" environment that runs eval/run_ragas.py --
+# do NOT install these into the same environment as app.py / run_eval.py.
+# See eval/run_ragas.py's module docstring for the full explanation of why
+# these two dependency trees can't coexist in one environment.
+#
+#   python -m venv venv-eval
+#   venv-eval\Scripts\activate      (Windows)  /  source venv-eval/bin/activate (macOS/Linux)
+#   pip install -r eval/requirements-eval.txt
+
+# Pinned <0.4 deliberately: ragas 0.4.x has an open upstream bug where
+# ragas/llms/base.py hardcodes `from langchain_community.chat_models.vertexai
+# import ChatVertexAI`, a class that was moved to the separate
+# langchain-google-vertexai package in current langchain-community releases.
+# This breaks `import ragas` outright, unrelated to anything in this project
+# (see github.com/vibrantlabsai/ragas issues #2741 / #2745). ragas==0.3.9 is
+# confirmed working. Re-check upstream before lifting this pin.
+ragas==0.3.9
+datasets
+langchain-groq
