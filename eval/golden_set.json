@@ -158,5 +158,107 @@
     "is_answerable": false,
     "relevant_chunks": [],
     "reference_answer": ""
+  },
+  {
+    "id": "q19",
+    "question": "What is mentioned under the Preferred (Good to Have) section?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+    ],
+    "reference_answer": "Internship or academic project experience in data analytics, machine learning, or database systems; participation in hackathons, coding contests, or Kaggle competitions; exposure to Agile or collaborative tools like JIRA and Confluence."
+  },
+  {
+    "id": "q20",
+    "question": "Is prior internship experience mandatory for this role?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+    ],
+    "reference_answer": "No. Internship or academic project experience is listed under 'Preferred (Good to Have, Not Mandatory)', not as a required qualification."
+  },
+  {
+    "id": "q21",
+    "question": "Are hackathons or coding contests mentioned as a plus?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+    ],
+    "reference_answer": "Yes, participation in hackathons, coding contests, or Kaggle competitions is listed as a preferred (good to have) qualification."
+  },
+  {
+    "id": "q22",
+    "question": "What collaborative tools are mentioned as a plus?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+    ],
+    "reference_answer": "Exposure to Agile or collaborative tools like JIRA and Confluence is listed as a preferred qualification."
+  },
+  {
+    "id": "q23",
+    "question": "What career pathways are mentioned in the What You'll Gain section?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+    ],
+    "reference_answer": "Career pathways in analytics, data science, GenAI, Agentic AI, or data engineering based on the candidate's interest and skills."
+  },
+  {
+    "id": "q24",
+    "question": "Is mentorship mentioned as part of this role?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+    ],
+    "reference_answer": "Yes, mentorship from experienced data professionals is listed under What You'll Gain."
+  },
+  {
+    "id": "q25",
+    "question": "What programming or development languages are mentioned as technical skills?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+    ],
+    "reference_answer": "Java, React, NodeJS, Python, SQL, and Excel are listed as the technical skill foundation."
+  },
+  {
+    "id": "q26",
+    "question": "Is a basic understanding of data structures and algorithms expected?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+    ],
+    "reference_answer": "Yes, a basic understanding of data structures, databases, and algorithms is listed under Technical Skills."
+  },
+  {
+    "id": "q27",
+    "question": "What role level or internal code is mentioned in the job title?",
+    "is_answerable": true,
+    "relevant_chunks": [
+      "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+    ],
+    "reference_answer": "DCF Level 25 at DGS."
+  },
+  {
+    "id": "q28",
+    "question": "What is the notice period required for this role?",
+    "is_answerable": false,
+    "relevant_chunks": [],
+    "reference_answer": ""
+  },
+  {
+    "id": "q29",
+    "question": "Does this role require prior work visa sponsorship?",
+    "is_answerable": false,
+    "relevant_chunks": [],
+    "reference_answer": ""
+  },
+  {
+    "id": "q30",
+    "question": "What is the application deadline for this position?",
+    "is_answerable": false,
+    "relevant_chunks": [],
+    "reference_answer": ""
   }
 ]

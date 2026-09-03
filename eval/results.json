@@ -1,115 +1,115 @@
 {
   "summary": {
-    "n_questions": 18,
+    "n_questions": 30,
     "retrieval_raw": {
       "recall_at_k": {
         "mean": 1.0,
         "median": 1.0,
         "p95": 1.0,
-        "n": 14
+        "n": 23
       },
       "precision_at_k": {
-        "mean": 0.2857142857142857,
+        "mean": 0.25217391304347825,
         "median": 0.2,
         "p95": 0.4,
-        "n": 14
+        "n": 23
       },
       "mrr": {
-        "mean": 0.8095238095238095,
+        "mean": 0.8115942028985508,
         "median": 1.0,
         "p95": 1.0,
-        "n": 14
+        "n": 23
       },
       "hit_rate": {
         "mean": 1.0,
         "median": 1.0,
         "p95": 1.0,
-        "n": 14
+        "n": 23
       }
     },
     "retrieval_served": {
       "recall_at_k": {
-        "mean": 0.8809523809523809,
+        "mean": 0.8840579710144928,
         "median": 1.0,
         "p95": 1.0,
-        "n": 14
+        "n": 23
       },
       "precision_at_k": {
-        "mean": 0.8690476190476191,
+        "mean": 0.9166666666666666,
         "median": 1.0,
         "p95": 1.0,
-        "n": 14
+        "n": 22
       },
       "mrr": {
-        "mean": 0.9285714285714286,
+        "mean": 0.9565217391304348,
         "median": 1.0,
         "p95": 1.0,
-        "n": 14
+        "n": 23
       },
       "hit_rate": {
-        "mean": 1.0,
+        "mean": 0.9565217391304348,
         "median": 1.0,
         "p95": 1.0,
-        "n": 14
+        "n": 23
       }
     },
     "refusal_quality": {
-      "refusal_recall": 0.75,
-      "false_refusal_rate": 0.0,
-      "n_unanswerable": 4,
-      "n_answerable": 14
+      "refusal_recall": 0.8571428571428571,
+      "false_refusal_rate": 0.043478260869565216,
+      "n_unanswerable": 7,
+      "n_answerable": 23
     },
     "effective_refusal_quality": {
       "refusal_recall": 1.0,
-      "false_refusal_rate": 0.0,
-      "n_unanswerable": 4,
-      "n_answerable": 14
+      "false_refusal_rate": 0.043478260869565216,
+      "n_unanswerable": 7,
+      "n_answerable": 23
     },
     "latency_ms": {
       "condense": {
-        "mean": 0.0023277777169520655,
-        "median": 0.002300001142430119,
-        "p95": 0.0029000002541579306,
-        "n": 18
+        "mean": 0.00214666360989213,
+        "median": 0.002149958163499832,
+        "p95": 0.0033999676816165447,
+        "n": 30
       },
       "retrieval": {
-        "mean": 31.964866666789426,
-        "median": 29.769800000394753,
-        "p95": 51.94880000090052,
-        "n": 18
+        "mean": 109.69738667093527,
+        "median": 45.15615003765561,
+        "p95": 428.15569997765124,
+        "n": 30
       },
       "rerank": {
-        "mean": 227.32299999996837,
-        "median": 216.9024000004356,
-        "p95": 291.58970000025874,
-        "n": 18
+        "mean": 532.3128399943622,
+        "median": 269.69884999562055,
+        "p95": 1679.3837999575771,
+        "n": 30
       },
       "generation": {
-        "mean": 508.0182833334119,
-        "median": 559.8304499999358,
-        "p95": 736.2262000006012,
-        "n": 18
+        "mean": 495.66108667252894,
+        "median": 558.0793500121217,
+        "p95": 1014.6373000461608,
+        "n": 30
       },
       "total": {
-        "mean": 767.3084777778867,
-        "median": 787.7858000010747,
-        "p95": 1038.3154999999533,
-        "n": 18
+        "mean": 1137.6734600014363,
+        "median": 866.0074000363238,
+        "p95": 2948.4815998584963,
+        "n": 30
       }
     },
     "ragas": null,
     "generation_quality": {
       "faithfulness": {
-        "mean": 0.9333333333333333,
+        "mean": 0.9565217391304348,
         "median": 1.0,
         "p95": 1.0,
-        "n": 15
+        "n": 23
       },
       "answer_relevance": {
-        "mean": 0.93,
+        "mean": 0.9521739130434783,
         "median": 1.0,
         "p95": 1.0,
-        "n": 15
+        "n": 23
       }
     }
   },
@@ -138,17 +138,17 @@
         "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
         "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
       ],
-      "answer": "**Job Summary**  \nWe are looking for enthusiastic and sharp\u2011minded fresh graduates to join our data team as Analyst/Associates/Software Engineer. This entry\u2011level role is designed to offer exposure across the data value chain\u2014from data wrangling and engineering to analytics and predictive modeling. You\u2019ll work closely with product, engineering, and business teams to help solve real\u2011world problems using data. Ideal candidates are passionate about uncovering insights, building scalable data pipelines, and developing machine learning models to drive decision\u2011making. (Source: JD for Analyst \u2013 DCF Level 25 at DGS)",
+      "answer": "**Job Summary**  \nWe are looking for enthusiastic and sharp\u2011minded fresh graduates to join our data team as Analyst/Associate/Software Engineer. This entry\u2011level role is designed to offer exposure across the data value chain\u2014from data wrangling and engineering to analytics and predictive modeling. You\u2019ll work closely with product, engineering, and business teams to help solve real\u2011world problems using data. Ideal candidates are passionate about uncovering insights, building scalable data pipelines, and developing machine learning models to drive decision\u2011making. (Source: JD for Analyst \u2013 DCF Level 25 at DGS)",
       "refused": false,
       "timings": {
-        "condense_ms": 0.002999999196617864,
-        "retrieval_ms": 30.81899999961024,
-        "rerank_ms": 291.58970000025874,
-        "generation_ms": 1003.8294000005408,
-        "total_ms": 1326.2410999996064
+        "condense_ms": 0.004099973011761904,
+        "retrieval_ms": 17.148400016594678,
+        "rerank_ms": 169.33960001915693,
+        "generation_ms": 1095.9033999824896,
+        "total_ms": 1282.395499991253
       },
-      "raw_retrieval_ms": 27.696500001184177,
-      "rerank_ms_standalone": 502.2533999999723,
+      "raw_retrieval_ms": 64.30849997559562,
+      "rerank_ms_standalone": 460.6402000063099,
       "recall_raw": 1.0,
       "precision_raw": 0.2,
       "mrr_raw": 1.0,
@@ -192,14 +192,14 @@
       "answer": "**Key Responsibilities**\n\n- Analyze large volumes of structured and unstructured data to extract meaningful business insights. (Source: JD for Analyst \u2013 \u201cKey Responsibilities\u201d section)",
       "refused": false,
       "timings": {
-        "condense_ms": 0.0029000002541579306,
-        "retrieval_ms": 35.715300000447314,
-        "rerank_ms": 220.65049999946496,
-        "generation_ms": 459.20250000017404,
-        "total_ms": 715.5712000003405
+        "condense_ms": 0.0020999577827751637,
+        "retrieval_ms": 291.62380000343546,
+        "rerank_ms": 955.2869999897666,
+        "generation_ms": 378.8318000151776,
+        "total_ms": 1625.7446999661624
       },
-      "raw_retrieval_ms": 24.761799999396317,
-      "rerank_ms_standalone": 196.1049000001367,
+      "raw_retrieval_ms": 65.4107999871485,
+      "rerank_ms_standalone": 705.9153000009246,
       "recall_raw": 1.0,
       "precision_raw": 0.6,
       "mrr_raw": 1.0,
@@ -210,7 +210,7 @@
       "hit_served": 1.0,
       "faithfulness_score": 1.0,
       "faithfulness_unsupported_claims": [],
-      "answer_relevance_score": 0.5,
+      "answer_relevance_score": 0.45,
       "soft_refusal": null,
       "effective_refused": false
     },
@@ -238,17 +238,17 @@
         "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
         "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
       ],
-      "answer": "**Qualifications required**\n\n- **Education**: Bachelor\u2019s degree in Engineering, Computer Science, Data Science, Gen AI or related fields. Final\u2011year students or recent graduates are welcome to apply.  \n- **Technical Skills**:  \n  - Strong foundation in Java, React, NodeJS, Python, SQL, and Excel.  \n  - Basic understanding of data structures, databases, and algorithms.  \n  - Exposure to pandas, NumPy, PySpark, scikit\u2011learn, GenAI, Agentic AI or TensorFlow is a plus.  \n  - Familiarity with BI tools (e.g., Power BI, Tableau) or cloud platforms (e.g., AWS, GCP) is desirable.  \n  - Knowledge of version control (Git) is an advantage.  \n- **Soft Skills**: Curiosity and a passion for data\u2011driven problem solving.",
+      "answer": "**Qualifications required**\n\n- **Education**: Bachelor\u2019s degree in Engineering, Computer Science, Data Science, Gen AI, or related fields. Final\u2011year students or recent graduates are also welcome to apply.  \n- **Technical skills**:  \n  - Strong foundation in Java, React, NodeJS, Python, SQL, and Excel.  \n  - Basic understanding of data structures, databases, and algorithms.  \n  - Exposure to pandas, NumPy, PySpark, scikit\u2011learn, GenAI, Agentic AI, or TensorFlow is a plus.  \n  - Familiarity with BI tools (e.g., Power\u202fBI, Tableau) or cloud platforms (e.g., AWS, GCP) is desirable.  \n  - Knowledge of version control (Git) is an advantage.  \n- **Soft skills**: Curiosity and a passion for data\u2011driven problem solving.",
       "refused": false,
       "timings": {
-        "condense_ms": 0.0016000012692529708,
-        "retrieval_ms": 22.420699999202043,
-        "rerank_ms": 171.4672000016435,
-        "generation_ms": 706.7940999986604,
-        "total_ms": 900.6836000007752
+        "condense_ms": 0.001500011421740055,
+        "retrieval_ms": 22.995000006631017,
+        "rerank_ms": 144.07009998103604,
+        "generation_ms": 539.5197999896482,
+        "total_ms": 706.586399988737
       },
-      "raw_retrieval_ms": 16.214399998716544,
-      "rerank_ms_standalone": 119.48389999997744,
+      "raw_retrieval_ms": 12.889299949165434,
+      "rerank_ms_standalone": 104.2872000252828,
       "recall_raw": 1.0,
       "precision_raw": 0.2,
       "mrr_raw": 0.5,
@@ -292,14 +292,14 @@
       "answer": "The soft skills mentioned in the context are:\n\n1. Curiosity and a passion for data\u2011driven problem solving  \n2. Strong analytical and logical thinking  \n3. Good communication and collaboration skills  \n4. Willingness to learn in a fast\u2011paced environment  \n5. Ability to break down complex problems and document clearly  \n\nThese are listed under the \u201cSoft Skills\u201d section of the document.",
       "refused": false,
       "timings": {
-        "condense_ms": 0.001999998858082108,
-        "retrieval_ms": 18.563999999969383,
-        "rerank_ms": 209.13649999965855,
-        "generation_ms": 479.4205999987753,
-        "total_ms": 707.1230999972613
+        "condense_ms": 0.00300002284348011,
+        "retrieval_ms": 43.92080003162846,
+        "rerank_ms": 241.5085999527946,
+        "generation_ms": 560.1410000235774,
+        "total_ms": 845.5734000308439
       },
-      "raw_retrieval_ms": 21.27199999995355,
-      "rerank_ms_standalone": 147.58740000070247,
+      "raw_retrieval_ms": 17.85050000762567,
+      "rerank_ms_standalone": 182.52540001412854,
       "recall_raw": 1.0,
       "precision_raw": 0.4,
       "mrr_raw": 1.0,
@@ -341,14 +341,14 @@
       "answer": "You\u2019ll gain hands\u2011on experience across analytics, data science, and engineering tracks to solve critical business problems; the opportunity to work on live projects and scalable systems; mentorship from experienced data professionals; and career pathways in analytics, data science, GenAI, Agentic AI, or data engineering based on your interests and skills. (From the \u201cWhat You\u2019ll Gain\u201d section.)",
       "refused": false,
       "timings": {
-        "condense_ms": 0.0017999991541728377,
-        "retrieval_ms": 28.142299999672105,
-        "rerank_ms": 184.8597999996855,
-        "generation_ms": 506.6394000004948,
-        "total_ms": 719.6432999990066
+        "condense_ms": 0.0022999593056738377,
+        "retrieval_ms": 56.220400030724704,
+        "rerank_ms": 285.6227000011131,
+        "generation_ms": 544.5960000506602,
+        "total_ms": 886.4414000418037
       },
-      "raw_retrieval_ms": 19.451599999229074,
-      "rerank_ms_standalone": 150.53479999914998,
+      "raw_retrieval_ms": 19.191499974112958,
+      "rerank_ms_standalone": 190.76659996062517,
       "recall_raw": 1.0,
       "precision_raw": 0.2,
       "mrr_raw": 0.3333333333333333,
@@ -386,14 +386,14 @@
       "answer": "I couldn't find this in the uploaded document(s). Try rephrasing the question, or upload a document that covers this topic.",
       "refused": true,
       "timings": {
-        "condense_ms": 0.002300001142430119,
-        "retrieval_ms": 30.1008999995247,
-        "rerank_ms": 187.22619999971357,
+        "condense_ms": 0.001700012944638729,
+        "retrieval_ms": 33.36920001311228,
+        "rerank_ms": 190.41229999857023,
         "generation_ms": 0.0,
-        "total_ms": 217.3294000003807
+        "total_ms": 223.78320002462715
       },
-      "raw_retrieval_ms": 31.500099999902886,
-      "rerank_ms_standalone": 168.29770000003919,
+      "raw_retrieval_ms": 24.247499997727573,
+      "rerank_ms_standalone": 161.33600001921877,
       "recall_raw": null,
       "precision_raw": null,
       "mrr_raw": null,
@@ -435,14 +435,14 @@
       "answer": "The Analyst/Associate/Software Engineer role is designed to bring fresh graduates into the data team so they can gain exposure across the entire data value chain\u2014data wrangling, engineering, analytics, and predictive modeling\u2014and help solve real\u2011world problems by extracting insights and building scalable data pipelines and machine learning models. (JD for Analyst \u2013 DCF Level\u202f25 at DGS)",
       "refused": false,
       "timings": {
-        "condense_ms": 0.0021999985619913787,
-        "retrieval_ms": 53.73650000001362,
-        "rerank_ms": 337.05279999958293,
-        "generation_ms": 603.9271999998164,
-        "total_ms": 994.7186999979749
+        "condense_ms": 0.0033999676816165447,
+        "retrieval_ms": 56.91609997302294,
+        "rerank_ms": 287.1694999630563,
+        "generation_ms": 561.3863000180572,
+        "total_ms": 905.4752999218181
       },
-      "raw_retrieval_ms": 46.91770000135875,
-      "rerank_ms_standalone": 277.17829999892274,
+      "raw_retrieval_ms": 36.82540002046153,
+      "rerank_ms_standalone": 285.0060000200756,
       "recall_raw": 1.0,
       "precision_raw": 0.2,
       "mrr_raw": 1.0,
@@ -486,14 +486,14 @@
       "answer": "**Key Responsibilities under Data Science**\n\n- Assist in building, testing, and deploying machine learning models under supervision.  \n- Work with statistical and ML techniques for classification, regression, clustering, etc.  \n- Collaborate on experiments, hypothesis testing, and performance evaluation of models.  \n\n(These points are taken directly from the \u201cData Science\u201d section of the JD.)",
       "refused": false,
       "timings": {
-        "condense_ms": 0.002499999027349986,
-        "retrieval_ms": 36.26810000059777,
-        "rerank_ms": 233.60610000054294,
-        "generation_ms": 610.688000000664,
-        "total_ms": 880.5647000008321
+        "condense_ms": 0.002200016751885414,
+        "retrieval_ms": 46.391500043682754,
+        "rerank_ms": 312.1285000233911,
+        "generation_ms": 556.5946000278927,
+        "total_ms": 915.1168001117185
       },
-      "raw_retrieval_ms": 27.65720000024885,
-      "rerank_ms_standalone": 193.36000000112108,
+      "raw_retrieval_ms": 36.11659997841343,
+      "rerank_ms_standalone": 209.81099997879937,
       "recall_raw": 1.0,
       "precision_raw": 0.2,
       "mrr_raw": 0.5,
@@ -536,14 +536,14 @@
       "answer": "**Technical skills listed in the context**\n\n1. Strong foundation in:\n   - Java  \n   - React  \n   - NodeJS  \n   - Python  \n   - SQL  \n   - Excel  \n\n2. Basic understanding of:\n   - Data structures  \n   - Databases  \n   - Algorithms  \n\n3. Exposure to (optional/plus):\n   - pandas  \n   - NumPy  \n   - PySpark  \n   - scikit\u2011learn  \n   - GenAI  \n   - Agentic AI  \n   - TensorFlow  \n\n4. Familiarity with:\n   - BI tools (e.g., Power\u202fBI, Tableau)  \n   - Cloud platforms (e.g., AWS, GCP)  \n\n5. Knowledge of version control:\n   - Git  \n\nThese are the technical skills mentioned in the provided document.",
       "refused": false,
       "timings": {
-        "condense_ms": 0.0025000008463393897,
-        "retrieval_ms": 37.43699999904493,
-        "rerank_ms": 264.6497999994608,
-        "generation_ms": 736.2262000006012,
-        "total_ms": 1038.3154999999533
+        "condense_ms": 0.0013999524526298046,
+        "retrieval_ms": 10.18470001872629,
+        "rerank_ms": 100.14910000609234,
+        "generation_ms": 575.0867999740876,
+        "total_ms": 685.4219999513589
       },
-      "raw_retrieval_ms": 25.47949999825505,
-      "rerank_ms_standalone": 218.87799999967683,
+      "raw_retrieval_ms": 10.979300015605986,
+      "rerank_ms_standalone": 89.94269999675453,
       "recall_raw": 1.0,
       "precision_raw": 0.2,
       "mrr_raw": 0.5,
@@ -585,14 +585,14 @@
       "answer": "**Educational qualifications**  \n- Bachelor\u2019s degree in Engineering, Computer Science, Data Science, Gen AI, or a related field.  \n- Final\u2011year students or recent graduates are also welcome to apply.  \n\n**Technical skills**  \n- Strong foundation in **Java, React, NodeJS, Python, SQL, and Excel**.  \n- Basic understanding of data structures, databases, and algorithms.  \n- Exposure to **pandas, NumPy, PySpark, scikit\u2011learn, GenAI, Agentic AI, or TensorFlow** is a plus.  \n- Familiarity with BI tools such as **Power\u202fBI** or **Tableau**, or cloud platforms like **AWS** or **GCP**, is desirable.  \n- Knowledge of version control (**Git**) is an advantage.",
       "refused": false,
       "timings": {
-        "condense_ms": 0.002300001142430119,
-        "retrieval_ms": 28.51840000039374,
-        "rerank_ms": 263.01709999825107,
-        "generation_ms": 607.9231999992771,
-        "total_ms": 899.4609999990644
+        "condense_ms": 0.001200009137392044,
+        "retrieval_ms": 11.898000026121736,
+        "rerank_ms": 96.07729996787384,
+        "generation_ms": 562.0263000018895,
+        "total_ms": 670.0028000050224
       },
-      "raw_retrieval_ms": 28.345700000500074,
-      "rerank_ms_standalone": 201.76509999873815,
+      "raw_retrieval_ms": 17.000399995595217,
+      "rerank_ms_standalone": 84.22640000935644,
       "recall_raw": 1.0,
       "precision_raw": 0.2,
       "mrr_raw": 0.5,
@@ -637,14 +637,14 @@
       "answer": "**Key responsibilities under Data Engineering** (as listed in the JD):\n\n- Support in designing and building data pipelines and ETL processes.  \n- Assist in data cleaning, transformation, and storage using SQL, Python, or cloud platforms.",
       "refused": false,
       "timings": {
-        "condense_ms": 0.0025000008463393897,
-        "retrieval_ms": 28.352799999993294,
-        "rerank_ms": 224.574500000017,
-        "generation_ms": 675.5822000013723,
-        "total_ms": 928.5120000022289
+        "condense_ms": 0.001400010660290718,
+        "retrieval_ms": 15.878000005614012,
+        "rerank_ms": 110.95449997810647,
+        "generation_ms": 494.40409999806434,
+        "total_ms": 621.2379999924451
       },
-      "raw_retrieval_ms": 29.301300000952324,
-      "rerank_ms_standalone": 191.76650000008522,
+      "raw_retrieval_ms": 14.716300007421523,
+      "rerank_ms_standalone": 106.27809999277815,
       "recall_raw": 1.0,
       "precision_raw": 0.4,
       "mrr_raw": 1.0,
@@ -687,14 +687,14 @@
       "answer": "**Key responsibilities under Data Analytics**\n\n- Analyze large volumes of structured and unstructured data to extract meaningful business insights. (Source: JD for Analyst \u2013 \u201cKey Responsibilities Data Analytics\u201d section)",
       "refused": false,
       "timings": {
-        "condense_ms": 0.0024000000848900527,
-        "retrieval_ms": 31.9273000004614,
-        "rerank_ms": 213.15430000140623,
-        "generation_ms": 551.6824000005727,
-        "total_ms": 796.7664000025252
+        "condense_ms": 0.001700012944638729,
+        "retrieval_ms": 26.68499998981133,
+        "rerank_ms": 193.9103999757208,
+        "generation_ms": 559.5640999963507,
+        "total_ms": 780.1611999748275
       },
-      "raw_retrieval_ms": 20.151099999566213,
-      "rerank_ms_standalone": 174.9918000004982,
+      "raw_retrieval_ms": 20.36179997958243,
+      "rerank_ms_standalone": 115.31470000045374,
       "recall_raw": 1.0,
       "precision_raw": 0.4,
       "mrr_raw": 1.0,
@@ -735,17 +735,17 @@
         "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
         "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
       ],
-      "answer": "The BI tools mentioned are **Power\u202fBI** and **Tableau**.",
+      "answer": "The BI tools mentioned are **Power\u202fBI** and **Tableau**. (These are listed under the \u201cFamiliarity with BI tools\u201d section of the qualifications.)",
       "refused": false,
       "timings": {
-        "condense_ms": 0.001999998858082108,
-        "retrieval_ms": 39.98440000032133,
-        "rerank_ms": 240.57799999900453,
-        "generation_ms": 478.89949999989767,
-        "total_ms": 759.4638999980816
+        "condense_ms": 0.00200001522898674,
+        "retrieval_ms": 24.56360001815483,
+        "rerank_ms": 236.9751000078395,
+        "generation_ms": 627.7843999559991,
+        "total_ms": 889.3250999972224
       },
-      "raw_retrieval_ms": 21.850700000868528,
-      "rerank_ms_standalone": 166.88190000058967,
+      "raw_retrieval_ms": 19.133099995087832,
+      "rerank_ms_standalone": 138.19440000224859,
       "recall_raw": 1.0,
       "precision_raw": 0.4,
       "mrr_raw": 1.0,
@@ -787,14 +787,14 @@
       "answer": "The cloud platforms mentioned are **AWS** and **GCP** (Amazon Web Services and Google Cloud Platform).",
       "refused": false,
       "timings": {
-        "condense_ms": 0.0020000006770715117,
-        "retrieval_ms": 18.5473000001366,
-        "rerank_ms": 192.27739999951154,
-        "generation_ms": 567.978499999299,
-        "total_ms": 778.8051999996242
+        "condense_ms": 0.001400010660290718,
+        "retrieval_ms": 13.154199987184256,
+        "rerank_ms": 95.18280002521351,
+        "generation_ms": 543.0096000200137,
+        "total_ms": 651.3480000430718
       },
-      "raw_retrieval_ms": 14.247899998736102,
-      "rerank_ms_standalone": 140.15180000023975,
+      "raw_retrieval_ms": 15.650799963623285,
+      "rerank_ms_standalone": 104.76469999412075,
       "recall_raw": 1.0,
       "precision_raw": 0.2,
       "mrr_raw": 1.0,
@@ -839,14 +839,14 @@
       "answer": "Git is listed as an **advantage** only. It is not stated as a required qualification. (Source: \u201cKnowledge of version control (Git) is an advantage.\u201d)",
       "refused": false,
       "timings": {
-        "condense_ms": 0.0029000002541579306,
-        "retrieval_ms": 51.94880000090052,
-        "rerank_ms": 286.8716000011773,
-        "generation_ms": 670.7814000001235,
-        "total_ms": 1009.6047000024555
+        "condense_ms": 0.001500011421740055,
+        "retrieval_ms": 20.888499973807484,
+        "rerank_ms": 110.54620001232252,
+        "generation_ms": 533.5776000283659,
+        "total_ms": 665.0138000259176
       },
-      "raw_retrieval_ms": 23.082699999577017,
-      "rerank_ms_standalone": 186.76030000096944,
+      "raw_retrieval_ms": 21.70129999285564,
+      "rerank_ms_standalone": 99.32670003036037,
       "recall_raw": 1.0,
       "precision_raw": 0.2,
       "mrr_raw": 1.0,
@@ -884,14 +884,14 @@
       "answer": "I couldn't find this in the uploaded document(s). Try rephrasing the question, or upload a document that covers this topic.",
       "refused": true,
       "timings": {
-        "condense_ms": 0.001999998858082108,
-        "retrieval_ms": 27.629100000922335,
-        "rerank_ms": 180.00109999957203,
+        "condense_ms": 0.001500011421740055,
+        "retrieval_ms": 17.472000035922974,
+        "rerank_ms": 139.2335999989882,
         "generation_ms": 0.0,
-        "total_ms": 207.63219999935245
+        "total_ms": 156.70710004633293
       },
-      "raw_retrieval_ms": 14.754499999980908,
-      "rerank_ms_standalone": 135.2747000000818,
+      "raw_retrieval_ms": 16.607699973974377,
+      "rerank_ms_standalone": 104.40359998028725,
       "recall_raw": null,
       "precision_raw": null,
       "mrr_raw": null,
@@ -929,14 +929,14 @@
       "answer": "I couldn't find this in the uploaded document(s). Try rephrasing the question, or upload a document that covers this topic.",
       "refused": true,
       "timings": {
-        "condense_ms": 0.0027999994927085936,
-        "retrieval_ms": 29.438700001264806,
-        "rerank_ms": 193.8867000008031,
+        "condense_ms": 0.001700012944638729,
+        "retrieval_ms": 27.4333999841474,
+        "rerank_ms": 144.15339997503906,
         "generation_ms": 0.0,
-        "total_ms": 223.32820000156062
+        "total_ms": 171.5884999721311
       },
-      "raw_retrieval_ms": 51.59509999975853,
-      "rerank_ms_standalone": 214.21960000043327,
+      "raw_retrieval_ms": 33.246300008613616,
+      "rerank_ms_standalone": 166.93070001201704,
       "recall_raw": null,
       "precision_raw": null,
       "mrr_raw": null,
@@ -976,14 +976,14 @@
       "answer": "The provided job description does not specify who the Analyst (DCF Level\u202f25 at DGS) reports to. It only outlines responsibilities and qualifications.",
       "refused": false,
       "timings": {
-        "condense_ms": 0.002200000380980782,
-        "retrieval_ms": 25.816999999733525,
-        "rerank_ms": 197.21469999967667,
-        "generation_ms": 484.75450000114506,
-        "total_ms": 707.7884000009362
+        "condense_ms": 0.0023999600671231747,
+        "retrieval_ms": 29.653400008101016,
+        "rerank_ms": 253.77499999012798,
+        "generation_ms": 662.151199998334,
+        "total_ms": 945.5819999566302
       },
-      "raw_retrieval_ms": 20.62850000038452,
-      "rerank_ms_standalone": 214.73259999947913,
+      "raw_retrieval_ms": 27.859500027261674,
+      "rerank_ms_standalone": 205.72260004701093,
       "recall_raw": null,
       "precision_raw": null,
       "mrr_raw": null,
@@ -998,6 +998,580 @@
       ],
       "answer_relevance_score": 1.0,
       "soft_refusal": true,
+      "effective_refused": true
+    },
+    {
+      "id": "q19",
+      "question": "What is mentioned under the Preferred (Good to Have) section?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+      ],
+      "answer": "Under the **Preferred (Good to Have, Not Mandatory)** section, the following items are mentioned:\n\n- Internship or academic project in data analytics, machine learning, or database systems  \n- Participation in hackathons, coding contests, or Kaggle competitions  \n- Exposure to Agile or collaborative tools like JIRA, Confluence",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.001700012944638729,
+        "retrieval_ms": 21.872499957680702,
+        "rerank_ms": 217.33479999238625,
+        "generation_ms": 584.8950000363402,
+        "total_ms": 824.1039999993518
+      },
+      "raw_retrieval_ms": 18.980499997269362,
+      "rerank_ms_standalone": 138.63469997886568,
+      "recall_raw": 1.0,
+      "precision_raw": 0.2,
+      "mrr_raw": 1.0,
+      "hit_raw": 1.0,
+      "recall_served": 1.0,
+      "precision_served": 1.0,
+      "mrr_served": 1.0,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 1.0,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q20",
+      "question": "Is prior internship experience mandatory for this role?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+      ],
+      "served_ids": [],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+      ],
+      "answer": "I couldn't find this in the uploaded document(s). Try rephrasing the question, or upload a document that covers this topic.",
+      "refused": true,
+      "timings": {
+        "condense_ms": 0.002800021320581436,
+        "retrieval_ms": 166.90180002478883,
+        "rerank_ms": 1118.0550000281073,
+        "generation_ms": 0.0,
+        "total_ms": 1284.9596000742167
+      },
+      "raw_retrieval_ms": 179.73560001701117,
+      "rerank_ms_standalone": 953.2612999901175,
+      "recall_raw": 1.0,
+      "precision_raw": 0.2,
+      "mrr_raw": 1.0,
+      "hit_raw": 1.0,
+      "recall_served": 0.0,
+      "precision_served": null,
+      "mrr_served": 1.0,
+      "hit_served": 0.0,
+      "faithfulness_score": null,
+      "faithfulness_unsupported_claims": null,
+      "answer_relevance_score": null,
+      "soft_refusal": null,
+      "effective_refused": true
+    },
+    {
+      "id": "q21",
+      "question": "Are hackathons or coding contests mentioned as a plus?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+      ],
+      "answer": "Yes. The context lists \u201cParticipation in hackathons, coding contests, or Kaggle competitions\u201d under the \u201cPreferred (Good to Have, Not Mandatory)\u201d section. This indicates that hackathons or coding contests are considered a plus. (Source: Soft Skills document, Preferred section)",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.0022999593056738377,
+        "retrieval_ms": 460.0978000089526,
+        "rerank_ms": 1927.5750000379048,
+        "generation_ms": 812.7340000355616,
+        "total_ms": 3200.4091000417247
+      },
+      "raw_retrieval_ms": 416.27769998740405,
+      "rerank_ms_standalone": 1634.1707999818027,
+      "recall_raw": 1.0,
+      "precision_raw": 0.2,
+      "mrr_raw": 1.0,
+      "hit_raw": 1.0,
+      "recall_served": 1.0,
+      "precision_served": 1.0,
+      "mrr_served": 1.0,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 1.0,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q22",
+      "question": "What collaborative tools are mentioned as a plus?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+      ],
+      "answer": "The plus\u2011point collaborative tools mentioned are **JIRA** and **Confluence** (see the \u201cPreferred (Good to Have, Not Mandatory)\u201d section).",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.001400010660290718,
+        "retrieval_ms": 347.0806999830529,
+        "rerank_ms": 1557.96599999303,
+        "generation_ms": 908.2088000141084,
+        "total_ms": 2813.2569000008516
+      },
+      "raw_retrieval_ms": 1491.7770000174642,
+      "rerank_ms_standalone": 1227.8460000525229,
+      "recall_raw": 1.0,
+      "precision_raw": 0.2,
+      "mrr_raw": 0.5,
+      "hit_raw": 1.0,
+      "recall_served": 1.0,
+      "precision_served": 1.0,
+      "mrr_served": 1.0,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 1.0,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q23",
+      "question": "What career pathways are mentioned in the What You'll Gain section?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+      ],
+      "answer": "The \u201cWhat You\u2019ll Gain\u201d section lists the following career pathways: analytics, data science, GenAI, Agentic AI, and data engineering.",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.001300009898841381,
+        "retrieval_ms": 172.9425999801606,
+        "rerank_ms": 899.2170999990776,
+        "generation_ms": 647.2903999965638,
+        "total_ms": 1719.4513999857008
+      },
+      "raw_retrieval_ms": 190.44450001092628,
+      "rerank_ms_standalone": 1582.2192000341602,
+      "recall_raw": 1.0,
+      "precision_raw": 0.2,
+      "mrr_raw": 1.0,
+      "hit_raw": 1.0,
+      "recall_served": 1.0,
+      "precision_served": 1.0,
+      "mrr_served": 1.0,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 1.0,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q24",
+      "question": "Is mentorship mentioned as part of this role?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "answer": "Yes. The description explicitly states \u201cMentorship from experienced data professionals.\u201d (See the \u201cWhat You\u2019ll Gain\u201d section.)",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.002200016751885414,
+        "retrieval_ms": 391.15749998018146,
+        "rerank_ms": 1569.8993999976665,
+        "generation_ms": 750.7963999523781,
+        "total_ms": 2711.855499946978
+      },
+      "raw_retrieval_ms": 108.06940001202747,
+      "rerank_ms_standalone": 1314.2464000266045,
+      "recall_raw": 1.0,
+      "precision_raw": 0.2,
+      "mrr_raw": 0.3333333333333333,
+      "hit_raw": 1.0,
+      "recall_served": 1.0,
+      "precision_served": 1.0,
+      "mrr_served": 1.0,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 1.0,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q25",
+      "question": "What programming or development languages are mentioned as technical skills?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+      ],
+      "answer": "The technical skills list includes the following programming or development languages:\n\n- **Java**  \n- **React**  \n- **NodeJS**  \n- **Python**  \n- **SQL**  \n\n(These are the languages explicitly mentioned in the qualifications section of the context.)",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.002400018274784088,
+        "retrieval_ms": 155.04639997379854,
+        "rerank_ms": 1031.8807999719866,
+        "generation_ms": 1014.6373000461608,
+        "total_ms": 2201.5669000102207
+      },
+      "raw_retrieval_ms": 181.55290000140667,
+      "rerank_ms_standalone": 1106.9129999959841,
+      "recall_raw": 1.0,
+      "precision_raw": 0.2,
+      "mrr_raw": 1.0,
+      "hit_raw": 1.0,
+      "recall_served": 1.0,
+      "precision_served": 1.0,
+      "mrr_served": 1.0,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 1.0,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q26",
+      "question": "Is a basic understanding of data structures and algorithms expected?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+      ],
+      "answer": "Yes. The job description states that a **basic understanding of data structures, databases, and algorithms** is part of the required technical skills. (Source: \u201cTechnical Skills\u201d section of the context.)",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.0021999585442245007,
+        "retrieval_ms": 428.15569997765124,
+        "rerank_ms": 1679.3837999575771,
+        "generation_ms": 840.9398999647237,
+        "total_ms": 2948.4815998584963
+      },
+      "raw_retrieval_ms": 259.2556999879889,
+      "rerank_ms_standalone": 1976.14290000638,
+      "recall_raw": 1.0,
+      "precision_raw": 0.2,
+      "mrr_raw": 0.5,
+      "hit_raw": 1.0,
+      "recall_served": 1.0,
+      "precision_served": 1.0,
+      "mrr_served": 1.0,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 1.0,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q27",
+      "question": "What role level or internal code is mentioned in the job title?",
+      "is_answerable": true,
+      "relevant_chunks": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+      ],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+      ],
+      "served_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0"
+      ],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "answer": "The job title includes the internal code \u201cDCF\u202fLevel\u202f25\u201d (as in \u201cAnalyst (DCF\u202fLevel\u202f25 at\u202fDGS)\u201d). This is the role level mentioned.",
+      "refused": false,
+      "timings": {
+        "condense_ms": 0.002300017513334751,
+        "retrieval_ms": 52.38760000793263,
+        "rerank_ms": 512.3805999755859,
+        "generation_ms": 515.7538000494242,
+        "total_ms": 1080.524300050456
+      },
+      "raw_retrieval_ms": 73.26739997370169,
+      "rerank_ms_standalone": 327.2849000059068,
+      "recall_raw": 1.0,
+      "precision_raw": 0.2,
+      "mrr_raw": 1.0,
+      "hit_raw": 1.0,
+      "recall_served": 1.0,
+      "precision_served": 1.0,
+      "mrr_served": 1.0,
+      "hit_served": 1.0,
+      "faithfulness_score": 1.0,
+      "faithfulness_unsupported_claims": [],
+      "answer_relevance_score": 1.0,
+      "soft_refusal": null,
+      "effective_refused": false
+    },
+    {
+      "id": "q28",
+      "question": "What is the notice period required for this role?",
+      "is_answerable": false,
+      "relevant_chunks": [],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+      ],
+      "served_ids": [],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2"
+      ],
+      "answer": "I couldn't find this in the uploaded document(s). Try rephrasing the question, or upload a document that covers this topic.",
+      "refused": true,
+      "timings": {
+        "condense_ms": 0.0032999669201672077,
+        "retrieval_ms": 98.16500003216788,
+        "rerank_ms": 321.06210000347346,
+        "generation_ms": 0.0,
+        "total_ms": 419.2304000025615
+      },
+      "raw_retrieval_ms": 28.608499967958778,
+      "rerank_ms_standalone": 234.06659997999668,
+      "recall_raw": null,
+      "precision_raw": null,
+      "mrr_raw": null,
+      "hit_raw": null,
+      "recall_served": null,
+      "precision_served": null,
+      "mrr_served": null,
+      "hit_served": null,
+      "faithfulness_score": null,
+      "faithfulness_unsupported_claims": null,
+      "answer_relevance_score": null,
+      "soft_refusal": null,
+      "effective_refused": true
+    },
+    {
+      "id": "q29",
+      "question": "Does this role require prior work visa sponsorship?",
+      "is_answerable": false,
+      "relevant_chunks": [],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+      ],
+      "served_ids": [],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+      ],
+      "answer": "I couldn't find this in the uploaded document(s). Try rephrasing the question, or upload a document that covers this topic.",
+      "refused": true,
+      "timings": {
+        "condense_ms": 0.002900022082030773,
+        "retrieval_ms": 151.3004000298679,
+        "rerank_ms": 580.530799983535,
+        "generation_ms": 0.0,
+        "total_ms": 731.8341000354849
+      },
+      "raw_retrieval_ms": 55.90539996046573,
+      "rerank_ms_standalone": 447.0428000204265,
+      "recall_raw": null,
+      "precision_raw": null,
+      "mrr_raw": null,
+      "hit_raw": null,
+      "recall_served": null,
+      "precision_served": null,
+      "mrr_served": null,
+      "hit_served": null,
+      "faithfulness_score": null,
+      "faithfulness_unsupported_claims": null,
+      "answer_relevance_score": null,
+      "soft_refusal": null,
+      "effective_refused": true
+    },
+    {
+      "id": "q30",
+      "question": "What is the application deadline for this position?",
+      "is_answerable": false,
+      "relevant_chunks": [],
+      "raw_retrieved_ids": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4"
+      ],
+      "served_ids": [],
+      "reranked_ids_all": [
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::0",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::2",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p3::4",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p1::1",
+        "7247a308b0be2e3f8a550cd99f8e3c10_JD-Analyst (2).pdf::p2::3"
+      ],
+      "answer": "I couldn't find this in the uploaded document(s). Try rephrasing the question, or upload a document that covers this topic.",
+      "refused": true,
+      "timings": {
+        "condense_ms": 0.0030999653972685337,
+        "retrieval_ms": 79.41760000539944,
+        "rerank_ms": 487.60410002432764,
+        "generation_ms": 0.0,
+        "total_ms": 567.0247999951243
+      },
+      "raw_retrieval_ms": 128.87690000934526,
+      "rerank_ms_standalone": 397.08650001557544,
+      "recall_raw": null,
+      "precision_raw": null,
+      "mrr_raw": null,
+      "hit_raw": null,
+      "recall_served": null,
+      "precision_served": null,
+      "mrr_served": null,
+      "hit_served": null,
+      "faithfulness_score": null,
+      "faithfulness_unsupported_claims": null,
+      "answer_relevance_score": null,
+      "soft_refusal": null,
       "effective_refused": true
     }
   ]
